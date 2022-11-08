@@ -1,0 +1,7 @@
+xst -ise "E:/TP_VHDL/Carrefourfeux/Carrefourfeux.ise" -intstyle ise -ifn Carrefourfeux.xst -ofn Carrefourfeux.syr
+ngdbuild -ise "E:/TP_VHDL/Carrefourfeux/Carrefourfeux.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "Carrefourfeux.ngc" Carrefourfeux.ngd
+map -ise "E:/TP_VHDL/Carrefourfeux/Carrefourfeux.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr b -k 4 -c 100 -o Carrefourfeux_map.ncd Carrefourfeux.ngd Carrefourfeux.pcf
+par -ise "E:/TP_VHDL/Carrefourfeux/Carrefourfeux.ise" -w -intstyle ise -ol std -t 1 Carrefourfeux_map.ncd Carrefourfeux.ncd Carrefourfeux.pcf
+trce -ise "E:/TP_VHDL/Carrefourfeux/Carrefourfeux.ise" -intstyle ise -e 3 -s 4 -xml Carrefourfeux Carrefourfeux.ncd -o Carrefourfeux.twr Carrefourfeux.pcf
+xst -ise "E:/TP_VHDL/Carrefourfeux/Carrefourfeux.ise" -intstyle ise -ifn Carrefourfeux.xst -ofn Carrefourfeux.syr
+xst -ise "E:/TP_VHDL/Carrefourfeux/Carrefourfeux.ise" -intstyle ise -ifn Carrefourfeux.xst -ofn Carrefourfeux.syr
